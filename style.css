@@ -1,0 +1,150 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+body {
+  background-color: #0f0f0f;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 20vw 80vw;
+  grid-template-rows: 10vh 10vh 80vh;
+  background-color: #0f0f0f;
+}
+
+aside {
+  display: grid;
+  grid-row: 1 / 4;
+  border: 1px solid white;
+  color: white;
+  gap: 20px;
+  align-content: start;
+}
+
+aside div {
+  display: flex;
+  align-items: center;
+  padding: 0px 5px;
+  margin-left: 10px;
+  gap: 20px;
+}
+
+aside div i {
+  font-size: 25px;
+}
+
+.hr {
+  height: 1px;
+  border: 1px solid white;
+  margin: 0px;
+}
+
+header {
+  border: 1px solid white;
+}
+
+header {
+  border: 1px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 10px;
+  color: white;
+}
+
+.searchsection {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-left: 100px;
+}
+
+.searchsection form {
+  display: flex;
+  height: 6vh;
+}
+
+.searchsection form input {
+  width: 40vw;
+  padding-left: 10px;
+  background-color: transparent;
+  border: 1px solid #222222;
+  border-top: 10px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.searchsection form button {
+  background-color: #222222;
+  border: 1px #222222;
+  width: 50px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  color: white;
+}
+
+header i {
+  font-size: 18px;
+}
+
+header button {
+  background: none;
+  border: none;
+  color: white;
+}
+
+.mic {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  background-color: #222222;
+}
+
+.profilesection {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+  gap: 20px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 0px 10px;
+  overflow-x: auto;
+}
+
+nav a {
+  background-color: #222222;
+  margin: 10px;
+  padding: 8px;
+  border-radius: 10px;
+  color: white;
+  width: fit-content;
+  text-wrap: nowrap;
+  text-decoration: none;
+}
+
+nav {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+nav ::-webkit-scrollbar {
+  display: none;
+}
+
+.videocontainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px;
+  padding: 10px;
+}
+
+.videocontainer figure {
+  border: 1px solid white;
+}
